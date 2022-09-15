@@ -1,0 +1,25 @@
+{
+    "totalItems": 5,
+
+    "cardsContent": [{
+        "title": "ProEnergy",
+        "info": "Energy Division",
+        "imgPath": "./resources/sectionTwoCardImage/card1.png"
+    }, {
+        "title": "ProEnergy",
+        "info": "Plant & Fleet Solutions",
+        "imgPath": "./resources/sectionTwoCardImage/card4.png"
+    }, {
+        "title": "ProEnergy",
+        "info": "Water Division",
+        "imgPath": "./resources/sectionTwoCardImage/card2.png"
+    }, {
+        "title": "ProEnergy",
+        "info": "Transport Division",
+        "imgPath": "./resources/sectionTwoCardImage/card5.png"
+    }, {
+        "title": "ProEnergy",
+        "info": " Telecom Division",
+        "imgPath": "./resources/sectionTwoCardImage/card2.png"
+    }]
+}

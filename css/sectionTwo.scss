@@ -1,0 +1,235 @@
+// Variables 
+@import "./variables";
+
+
+.sectionTwo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 902px;
+
+    .leftContainer {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        background-color: $sectionTwoBackgroundColorLeft;
+
+        .whatWeDoContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 80%;
+
+
+            .sectionTwOWhiteLine {
+                width: 110px;
+                height: 10px;
+            }
+
+            .leftContainerTitle {
+                font-weight: 400;
+                font-size: 46px;
+                line-height: 58px;
+                color: $plainWhite;
+            }
+
+            .leftContainerPara {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                color: $plainWhite;
+
+            }
+
+            button {
+                width: 263px;
+                height: 52px;
+                padding: 14px 33px;
+                border-radius: 10px;
+                border: none;
+                background-color: $primaryButtonColor;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: $plainWhite;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .btnArrow {
+                    margin-left: 5px;
+                }
+            }
+
+        }
+
+    }
+
+    .rightContainer {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .up {
+            flex: 1;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .down {
+            display: flex;
+            padding: 50px 30px;
+            flex: 1;
+            background-color: $sectionTwoRightBottomBackgroundColor;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .card {
+                align-items: flex-start;
+                display: inherit;
+                flex-direction: row;
+                gap: 10px;
+                width: 300px;
+
+                .cardText {
+                    display: inherit;
+                    flex-direction: column;
+
+                    .cardTitle {
+                        align-self: flex-start;
+                        font-weight: 700;
+                        font-size: 26px;
+                        line-height: 32px;
+                        color: $primaryButtonColor;
+                    }
+
+                    .cardInfo {
+                        font-weight: 500;
+                        font-size: 26px;
+                        line-height: 32px;
+                        color: $navLinksColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//? Responsive
+
+// Tablet
+
+@media screen and(min-width:768px) and(max-width:1340px) {
+    .sectionTwo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .leftContainer {
+            display: inherit;
+            padding: 3% 0;
+            width: 100%;
+
+            .whatWeDoContainer {
+                width: 100%;
+                padding: 0 3%;
+
+                .leftContainerTitle {
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+
+                .leftContainerPara {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        .rightContainer {
+            .cardHolder {
+
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 20px;
+
+                .card {
+                    width: 344px;
+                }
+            }
+        }
+    }
+}
+
+
+// Mobile 
+
+@media screen and(max-width:767px) {
+    .sectionTwo {
+        display: flex;
+        flex-direction: column;
+
+        .leftContainer {
+            padding: 5%;
+            width: 100%;
+
+            .whatWeDoContainer {
+                .leftContainerTitle {
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+
+                .leftContainerPara {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+
+                button {
+                    width: 100%;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+
+        }
+
+        .rightContainer {
+            .cardHolder {
+                display: flex;
+                flex-direction: column;
+                gap: 27px;
+
+                .card {
+                    width: 100%;
+
+                    .cardText {
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+
+                    .cardInfo {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+
+    }
+}

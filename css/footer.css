@@ -1,0 +1,71 @@
+footer {
+  height: 130px;
+  width: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #575756;
+  text-decoration: none;
+}
+
+footer .up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .up .logoContainer img {
+  height: 75px;
+  width: 250px;
+}
+
+footer .up .socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+footer .up .socialLinks i {
+  color: #59A6C0;
+}
+
+footer .down {
+  text-align: center;
+  width: 100%;
+  padding: 15px 230px;
+  height: 45px;
+  background-color: #E66559;
+}
+
+footer .down .trademark {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+/*# sourceMappingURL=footer.css.map */

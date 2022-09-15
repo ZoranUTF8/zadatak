@@ -1,0 +1,21 @@
+[{
+        "id": 1,
+        "reviewText": "Sed dignissim placerat dolor id maxim. Nullam gravida bibendum ipsum, a consequat neque venenatis et.",
+        "userImage": "./resources/sectionFour/image1.png",
+        "profileText": "Orci varius natoque Magnis dis parturient montes"
+
+    },
+    {
+        "id": 2,
+        "reviewText": "Vivamus venenatis ipsum at risus placerat, sit amet dapibus diam aliquam posuere cubilia curae.",
+        "userImage": "./resources/sectionFour/image2.png",
+        "profileText": "Praesent Tempus Nunc faucibus eget "
+
+    }, {
+        "id": 3,
+        "reviewText": "Etiam mollis sit amet tellus ut accumsan. Donec sit amet lectus scelerisque, bibendum purus id, tristique felis.",
+        "userImage": "./resources/sectionFour/image3.png",
+        "profileText": "Cras malesuada Sed pulvinar ac lorem"
+
+    }
+]

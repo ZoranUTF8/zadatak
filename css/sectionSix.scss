@@ -1,0 +1,133 @@
+// Variables 
+@import "./variables";
+
+.sectionSix {
+    background-color: $sectionFiveAccordionBackground;
+    width: 100%;
+    height: 705px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .titleContainer {
+        padding-bottom: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        .title {
+            font-weight: 400;
+            font-size: 46px;
+            line-height: 58px;
+        }
+    }
+
+
+    form {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+
+        input {
+            width: 580px;
+            border: 1px solid #575756;
+            border-radius: 10px;
+            height: 50px;
+            padding: 10px;
+
+        }
+
+        .up {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            label {
+                display: block;
+            }
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .right {
+                background-attachment: blue;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+        }
+
+        .down {
+            width: 100%;
+            text-align: center;
+
+
+            textarea {
+                width: 1200px;
+                border: 1px solid #575756;
+                border-radius: 10px;
+                resize: none;
+
+            }
+        }
+
+        .btnContainert {
+            width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 148px;
+                height: 52px;
+                padding: 14px 33px;
+                border-radius: 10px;
+                border: none;
+                color: $plainWhite;
+                background-color: $primaryButtonColor;
+
+                .btnArrow {
+                    margin-left: 10px;
+                }
+            }
+
+            h5 {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $navLinksColor;
+            }
+        }
+    }
+
+
+}
+
+//? Responsive
+
+// Tablet
+
+@media screen and(min-width:768px) and(max-width:1340px) {}
+
+// Mobile 
+
+@media screen and(max-width:767px) {}

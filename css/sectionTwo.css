@@ -1,0 +1,274 @@
+.sectionTwo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 902px;
+}
+
+.sectionTwo .leftContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #59A6C0;
+}
+
+.sectionTwo .leftContainer .whatWeDoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 80%;
+}
+
+.sectionTwo .leftContainer .whatWeDoContainer .sectionTwOWhiteLine {
+  width: 110px;
+  height: 10px;
+}
+
+.sectionTwo .leftContainer .whatWeDoContainer .leftContainerTitle {
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 58px;
+  color: #fff;
+}
+
+.sectionTwo .leftContainer .whatWeDoContainer .leftContainerPara {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.sectionTwo .leftContainer .whatWeDoContainer button {
+  width: 263px;
+  height: 52px;
+  padding: 14px 33px;
+  border-radius: 10px;
+  border: none;
+  background-color: #E73137;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionTwo .leftContainer .whatWeDoContainer button .btnArrow {
+  margin-left: 5px;
+}
+
+.sectionTwo .rightContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sectionTwo .rightContainer .up {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sectionTwo .rightContainer .up img {
+  width: 100%;
+  height: 100%;
+}
+
+.sectionTwo .rightContainer .down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #F1F0F0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sectionTwo .rightContainer .down .card {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: inherit;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  width: 300px;
+}
+
+.sectionTwo .rightContainer .down .card .cardText {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sectionTwo .rightContainer .down .card .cardText .cardTitle {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  color: #E73137;
+}
+
+.sectionTwo .rightContainer .down .card .cardText .cardInfo {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: #575756;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1340px) {
+  .sectionTwo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectionTwo .leftContainer {
+    display: inherit;
+    padding: 3% 0;
+    width: 100%;
+  }
+  .sectionTwo .leftContainer .whatWeDoContainer {
+    width: 100%;
+    padding: 0 3%;
+  }
+  .sectionTwo .leftContainer .whatWeDoContainer .leftContainerTitle {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .sectionTwo .leftContainer .whatWeDoContainer .leftContainerPara {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .sectionTwo .rightContainer .cardHolder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 20px;
+  }
+  .sectionTwo .rightContainer .cardHolder .card {
+    width: 344px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sectionTwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectionTwo .leftContainer {
+    padding: 5%;
+    width: 100%;
+  }
+  .sectionTwo .leftContainer .whatWeDoContainer .leftContainerTitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .sectionTwo .leftContainer .whatWeDoContainer .leftContainerPara {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .sectionTwo .leftContainer .whatWeDoContainer button {
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .sectionTwo .rightContainer .cardHolder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 27px;
+  }
+  .sectionTwo .rightContainer .cardHolder .card {
+    width: 100%;
+  }
+  .sectionTwo .rightContainer .cardHolder .card .cardText {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .sectionTwo .rightContainer .cardHolder .card .cardInfo {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+/*# sourceMappingURL=sectionTwo.css.map */
