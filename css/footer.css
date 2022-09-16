@@ -43,15 +43,36 @@ footer .up .logoContainer img {
   width: 250px;
 }
 
-footer .up .socialLinks {
+footer .up .social_site {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .up .social_site .socialLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 
-footer .up .socialLinks i {
+footer .up .social_site .socialLinks i {
   color: #59A6C0;
+}
+
+footer .up .social_site .siteLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }
 
 footer .down {
@@ -67,5 +88,80 @@ footer .down .trademark {
   font-size: 12px;
   line-height: 15px;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1340px) {
+  footer {
+    min-height: 177px;
+  }
+  footer .up {
+    height: 100%;
+  }
+  footer .up .logoContainer {
+    width: 40%;
+  }
+  footer .up .social_site {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .up {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  footer .up .social_site {
+    display: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  footer .down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 60px;
+  }
+  footer .down .trademark {
+    width: 100vw;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

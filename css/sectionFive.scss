@@ -11,6 +11,7 @@
     gap: 30px;
     padding: 3%;
 
+
     .title {
         font-weight: 400;
         font-size: 40px;
@@ -20,9 +21,104 @@
     }
 
     .accordion {
-        background-color: $sectionFiveAccordionBackground;
-        height: 554px;
+        background-color: $plainWhite;
+        min-height: 554px;
         width: 700px;
+        padding: 2%;
+
+        .contentBox:first-child {
+            border-top: 2px solid $sectionFiveAccordionBackground;
+
+        }
+
+
+        .contentBox {
+            width: 100%;
+            position: relative;
+
+
+            .contentBoxTitle {
+
+                cursor: pointer;
+                text-align: left;
+                position: relative;
+                background-color: $plainWhite;
+                width: 100%;
+                border-bottom: 2px solid $sectionFiveAccordionBackground;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 32px;
+                color: $plainBlack;
+                padding: 10px;
+
+                &::before {
+                    content: "+";
+                    position: absolute;
+                    color: $sectionFiveAccordionBtnColor;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                    font-size: 1.5em;
+                }
+
+
+            }
+
+            .textContent {
+
+                background-color: $sectionFiveAccordionBackground;
+                opacity: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160.2%;
+                letter-spacing: 0.02em;
+                position: relative;
+                height: 0;
+                overflow: hidden;
+                transition: 0.5s;
+                overflow-y: auto;
+
+
+
+            }
+
+        }
+
+        .contentBox.active {
+
+            .contentBoxTitle {
+
+                &::before {
+                    content: "-";
+                    position: absolute;
+                    color: $sectionFiveAccordionBtnColor;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                    font-size: 1.5em;
+                    ;
+                }
+            }
+
+            .textContent {
+                border-bottom: 2px solid $sectionFiveAccordionBackground;
+                border-top: 2px solid $sectionFiveAccordionBackground;
+
+                width: 100%;
+                height: 284px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+                gap: 10px;
+            }
+
+        }
+
     }
 }
 
@@ -33,11 +129,11 @@
 @media screen and(min-width:768px) and(max-width:1340px) {
     .sectionFive {
         width: 100%;
-        height: 738px;
+        min-height: 738px;
 
         .accordion {
-            background-color: purple;
-            height: 554px;
+            background-color: $plainWhite;
+            min-height: 554px;
             width: 100%;
         }
     }
@@ -47,6 +143,8 @@
 
 @media screen and(max-width:767px) {
     .sectionFive {
+        margin-bottom: 20px;
+
         .title {
             font-weight: 400;
             font-size: 30px;
@@ -54,7 +152,10 @@
         }
 
         .accordion {
+
+            height: auto;
             width: 95%;
+
         }
     }
 }

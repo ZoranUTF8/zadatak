@@ -29,14 +29,30 @@ footer {
             width: 250px;
         }
 
-        .socialLinks {
+        .social_site {
+            height: 100%;
+            width: 50%;
             display: flex;
-            gap: 20px;
+            align-items: center;
+            justify-content: space-evenly;
 
-            i {
-                color: $footerSocialLinksColor;
+
+            .socialLinks {
+                display: flex;
+                gap: 20px;
+
+                i {
+                    color: $footerSocialLinksColor;
+                }
+            }
+
+            .siteLinks {
+                display: flex;
+                gap: 20px;
+
             }
         }
+
 
 
     }
@@ -57,4 +73,78 @@ footer {
     }
 
 
+}
+
+
+
+//? Responsive
+
+// Tablet
+
+@media screen and(min-width:768px) and(max-width:1340px) {
+    footer {
+        min-height: 177px;
+
+        .up {
+            height: 100%;
+
+            .logoContainer {
+                width: 40%;
+            }
+
+            .social_site {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                .socialLinks {}
+
+                .siteLinks {}
+
+
+            }
+        }
+    }
+}
+
+// Mobile 
+
+@media screen and(max-width:767px) {
+
+
+    footer {
+
+        display: flex;
+        align-items: center;
+
+        .up {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+
+            .social_site {
+                display: inherit;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .siteLinks {}
+
+        }
+
+        .down {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60px;
+
+            .trademark {
+                width: 100vw;
+            }
+        }
+    }
 }
