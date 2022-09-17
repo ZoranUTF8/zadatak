@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/d79e3450ae.js" crossorigin="anonymous"></script>
     <!-- jQUery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-
+    <script <script src="js/script.js" defer></script>
 
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <title>Pro Energy</title>
@@ -22,65 +22,49 @@
 
     <!-- HEADER START -->
     <header class="header">
-        <div class="container">
-            <div class="header-main">
-                <div class="logo">
-                    <img src="resources/logo.png" alt="main logo">
-                </div>
-
-                <!-- RESPONSIVE NAVBAR  -->
-                <div class="open-nav-menu">
-                    <button class="openNav openBtn"><i class="fa-solid fa-bars fa-2xl"></i></button>
-                    <button class="closeNav hiddenBtn"><i class="fa-sharp fa-solid fa-xmark fa-2xl"></i></button>
-                </div>
-
-                <!-- NAVBAR START -->
-
-                <nav class="nav-menu">
-
-                    <ul class="menu">
-                        <li class="menu-item"><a href="">Our Group</a>
-                        </li>
-
-
-                        <li class="menu-item menu-item-with-children">
-                            <a href="">Our Divisions</a><i class="fa fa-chevron-down fa-2xs" aria-hidden="true"></i>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="">Our Operations Structure</a></li>
-                                <li class="menu-item"><a href="">Water Division</a></li>
-                                <li class="menu-item"><a href="">Transport Division</a></li>
-                                <li class="menu-item"><a href="">Telecom Division</a></li>
-                                <li class="menu-item"><a href="">Energy Division</a></li>
-                                <li class="menu-item"><a href="">Plant & Fleet Solutions</a></li>
-                            </ul>
-                        </li>
-
-
-                        <li class="menu-item"><a href="">Our People</a></li>
-
-
-                        <li class="menu-item menu-item-with-children"><a href="">Investors</a><i
-                                class="fa fa-chevron-down fa-2xs" aria-hidden="true"></i>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="">Our Investment Strategy</a></li>
-                                <li class="menu-item"><a href="">IR Contracts</a></li>
-                                <li class="menu-item"><a href="">Tax Strategy</a></li>
-                                <li class="menu-item"><a href="">Sector Analysis</a></li>
-                                <li class="menu-item"><a href="">Annual Reports</a></li>
-                            </ul>
-                        </li>
-
-
-                        <li class="menu-item"><a href="">Our News</a></li>
-
-
-                        <li class="menu-item"><a href="">Contact Us</a></li>
-                    </ul>
-                </nav>
-                <!-- NAVBAR END -->
-
+        <div class="logo">
+            <img src="resources/logo.png" alt="main logo">
+            <!-- RESPONSIVE NAVBAR  -->
+            <div class="open-nav-menu">
+                <button class="openNav openBtn"><i class="fa-solid fa-bars fa-2xl"></i></button>
+                <button class="closeNav hiddenBtn"><i class="fa-sharp fa-solid fa-xmark fa-2xl"></i></button>
             </div>
         </div>
+        <!-- NAVBAR START -->
+        <nav class="nav-menu">
+
+            <ul>
+                <li><a href="#">Our Group</a></li>
+                <li><a href="#">Our Divisions</a>
+                    <i class="fa fa-chevron-down fa-2xs" aria-hidden="true"></i>
+                    <ul class="dropdown">
+                        <li class="menu-item"><a href="">Our Operations Structure</a></li>
+                        <li class="menu-item"><a href="">Water Division</a></li>
+                        <li class="menu-item"><a href="">Transport Division</a></li>
+                        <li class="menu-item"><a href="">Telecom Division</a></li>
+                        <li class="menu-item"><a href="">Energy Division</a></li>
+                        <li class="menu-item"><a href="">Plant & Fleet Solutions</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Our People</a></li>
+                <li><a href="#">Investors</a>
+                    <i class="fa fa-chevron-down fa-2xs" aria-hidden="true"></i>
+                    <ul class="dropdown">
+                        <li class="menu-item"><a href="">Our Investment Strategy</a></li>
+                        <li class="menu-item"><a href="">IR Contracts</a></li>
+                        <li class="menu-item"><a href="">Tax Strategy</a></li>
+                        <li class="menu-item"><a href="">Sector Analysis</a></li>
+                        <li class="menu-item"><a href="">Annual Reports</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Investors</a></li>
+
+            </ul>
+
+
+        </nav>
+        <!-- NAVBAR END -->
     </header>
     <!-- HEADER START -->
     <main>
@@ -269,9 +253,46 @@
 
 
 
-
-
-    <script src="js/script.js"></script>
 </body>
 
 </html>
+
+
+<!-- <ul class="menu">
+    <li class="menu-item"><a href="">Our Group</a>
+    </li>
+
+
+    <li class="menu-item menu-item-with-children">
+        <a href="">Our Divisions</a><i class="fa fa-chevron-down fa-2xs" aria-hidden="true"></i>
+        <ul class="sub-menu">
+            <li class="menu-item"><a href="">Our Operations Structure</a></li>
+            <li class="menu-item"><a href="">Water Division</a></li>
+            <li class="menu-item"><a href="">Transport Division</a></li>
+            <li class="menu-item"><a href="">Telecom Division</a></li>
+            <li class="menu-item"><a href="">Energy Division</a></li>
+            <li class="menu-item"><a href="">Plant & Fleet Solutions</a></li>
+        </ul>
+    </li>
+
+
+    <li class="menu-item"><a href="">Our People</a></li>
+
+
+    <li class="menu-item menu-item-with-children"><a href="">Investors</a><i
+            class="fa fa-chevron-down fa-2xs" aria-hidden="true"></i>
+        <ul class="sub-menu">
+            <li class="menu-item"><a href="">Our Investment Strategy</a></li>
+            <li class="menu-item"><a href="">IR Contracts</a></li>
+            <li class="menu-item"><a href="">Tax Strategy</a></li>
+            <li class="menu-item"><a href="">Sector Analysis</a></li>
+            <li class="menu-item"><a href="">Annual Reports</a></li>
+        </ul>
+    </li>
+
+
+    <li class="menu-item"><a href="">Our News</a></li>
+
+
+    <li class="menu-item"><a href="">Contact Us</a></li>
+</ul> -->

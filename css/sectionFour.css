@@ -176,6 +176,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 97px;
+  cursor: pointer;
 }
 
 .sectionFour .rightContainer .container .review .btn-container .prevBtn img {
@@ -184,6 +185,7 @@
 }
 
 .sectionFour .rightContainer .container .review .btn-container button {
+  cursor: pointer;
   background-color: transparent;
   border: none;
 }
