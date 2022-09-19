@@ -1,21 +1,23 @@
 //  NAVBAR START
 
-const openNav = document.querySelector(".openNav");
-const closeNav = document.querySelector(".closeNav");
+const openBtn = document.querySelector(".openBtn");
+const closeBtn = document.querySelector(".closeBtn");
 const resNav = document.querySelector(".nav-menu");
+const header = document.querySelector(".header");
+const dropBtn = document.querySelectorAll(".dropBtn");
+const dropdown = document.querySelector(".dropdown");
 
-openNav.addEventListener("click", () => {
-  resNav.classList.add("open");
-  openNav.classList.remove("openBtn");
-  openNav.classList.add("hiddenBtn");
-  closeNav.classList.add("openBtn");
+openBtn.addEventListener("click", () => {
+  header.classList.add("open");
+});
+closeBtn.addEventListener("click", () => {
+  header.classList.remove("open");
 });
 
-closeNav.addEventListener("click", () => {
-  resNav.classList.remove("open");
-  openNav.classList.add("openBtn");
-  closeNav.classList.remove("openBtn");
-  closeNav.classList.add("hiddenBtn");
+dropBtn.forEach((item) => {
+  item.addEventListener("click", () => {
+    dropdown.classList.toggle("display");
+  });
 });
 
 // NAVBAR END

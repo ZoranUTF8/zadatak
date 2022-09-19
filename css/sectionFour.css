@@ -213,6 +213,7 @@
     line-height: 50px;
   }
   .sectionFour .leftContainer .info {
+    width: 80%;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;

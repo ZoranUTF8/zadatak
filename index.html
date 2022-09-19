@@ -26,8 +26,8 @@
             <img src="resources/logo.png" alt="main logo">
             <!-- RESPONSIVE NAVBAR  -->
             <div class="open-nav-menu">
-                <button class="openNav openBtn"><i class="fa-solid fa-bars fa-2xl"></i></button>
-                <button class="closeNav hiddenBtn"><i class="fa-sharp fa-solid fa-xmark fa-2xl"></i></button>
+                <button class="openBtn"><i class="fa-solid fa-bars fa-2xl"></i></button>
+                <button class="closeBtn"><i class="fa-sharp fa-solid fa-xmark fa-2xl"></i></button>
             </div>
         </div>
         <!-- NAVBAR START -->
@@ -35,7 +35,7 @@
 
             <ul>
                 <li><a href="#">Our Group</a></li>
-                <li><a href="#">Our Divisions</a>
+                <li class="dropBtn"><a href="#">Our Divisions</a>
                     <i class="fa fa-chevron-down fa-2xs" aria-hidden="true"></i>
                     <ul class="dropdown">
                         <li class="menu-item"><a href="">Our Operations Structure</a></li>
@@ -47,7 +47,7 @@
                     </ul>
                 </li>
                 <li><a href="#">Our People</a></li>
-                <li><a href="#">Investors</a>
+                <li class="dropBtn"><a href="#">Investors</a>
                     <i class="fa fa-chevron-down fa-2xs" aria-hidden="true"></i>
                     <ul class="dropdown">
                         <li class="menu-item"><a href="">Our Investment Strategy</a></li>
@@ -113,19 +113,64 @@
 
         <!-- SECTION THREE START -->
         <section class="sectionThree">
+            <div class="up">
+                <img src="./resources/sectionThree/upperLine.png" alt="black line">
+                <h1>ESG Stats</h1>
+            </div>
+            <div class="center">
+                <div class="counterContainer">
+                    <div class="counterContainerUp">
+                        <h3>Used</h3>
+                    </div>
+                    <div class="counterContainerCenter">
+                        <p class="counterText">83<span>%</span></p>
+                    </div>
+                    <div class="counterContainerDown">
+                        <p>renewable energy</p>
+                    </div>
+                </div>
+                <div class="counterContainer">
+                    <div class="counterContainerUp">
+                        <h3>Recovered</h3>
+                    </div>
+                    <div class="counterContainerCenter">
+                        <p class="counterText">77<span>%</span></p>
+                    </div>
+                    <div class="counterContainerDown">
+                        <p>of waste to avoid landfill</p>
+                    </div>
+                </div>
+                <div class="counterContainer">
+                    <div class="counterContainerUp">
+                        <h3>Recorded over</h3>
+                    </div>
+                    <div class="counterContainerCenter">
+                        <p class="counterText">15,000</p>
+                    </div>
+                    <div class="counterContainerDown">
+                        <p>electrical vehicle miles</p>
+                    </div>
+                </div>
 
+            </div>
+            <div class="down">
+                <p>Donec lobortis at orci eu iaculis. Sed nisl nunc, <br />ƒaliquam lacinia luctus id, scelerisque.</p>
+                <button>Find out more <img src="./resources/buttonArrow.png" alt="arrow" class="btnArrow"></button>
+            </div>
         </section>
+
         <!-- SECTION THREE END -->
+
 
         <!-- SETION FOUR START -->
         <section class="sectionFour">
             <div class="leftContainer">
                 <img class="line" src="./resources/sectionFour/sectionFourLine.png" alt="line">
                 <h3 class="title">What our people say</h3>
-                <p class="info">As a Group we recognise that engaging and empowering our <br /> people to deliver and
+                <p class="info">As a Group we recognise that engaging and empowering our people to deliver and
                     grow is pivotal
                     to
-                    driving our business and <br /> achieving continued success.
+                    driving our business and achieving continued success.
                 </p>
 
                 <button>Hear our people’s views <img src="./resources/buttonArrowRed.png" class="btnArrow">

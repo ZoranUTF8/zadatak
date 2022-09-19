@@ -1,11 +1,211 @@
-// Variables import
+// Variables 
 @import "./variables";
 
-.sectionThree {
 
-    background-color: lightblue;
+
+.sectionThree {
     width: 100%;
+    min-height: 725px;
     display: flex;
-    flex-direction: row;
-    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $sectionThreeBackgroundColor;
+
+    .up {
+        margin-top: 30px;
+        text-align: center;
+        font-family: 'Quicksand';
+
+
+        h1 {
+            margin-top: 30px;
+            font-weight: 400;
+            font-size: 46px;
+            line-height: 58px;
+            color: $plainBlack;
+        }
+
+    }
+
+    .center {
+        font-family: 'Quicksand';
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .counterContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+
+            .counterContainerCenter {
+                p {
+                    font-weight: 400;
+                    font-size: 100px;
+                    line-height: 100px;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 60px;
+                    line-height: 70px;
+                }
+            }
+
+        }
+    }
+
+
+    .down {
+
+        width: 100%;
+        display: inherit;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        font-family: 'Quicksand';
+
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+
+        }
+
+        button {
+            background-color: $primaryButtonColor;
+            width: 201px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 33px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $plainWhite;
+
+            .btnArrow {
+                margin-left: 5px;
+            }
+        }
+
+    }
+
+}
+
+
+//? Responsive
+
+// Tablet
+
+@media screen and(min-width:768px) and(max-width:1340px) {
+
+    .sectionThree {
+        .up {
+            h1 {
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+
+        .center {
+            h3 {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                /* identical to box height */
+                text-align: center;
+                letter-spacing: 0.04em;
+
+            }
+
+            .counterText {
+                font-weight: 400;
+                font-size: 70px;
+                line-height: 70px;
+            }
+
+            .counterContainerDown {
+                text-align: center;
+                width: 60%;
+
+                p {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+
+
+        }
+
+        .down {
+
+            p {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+
+
+        }
+
+    }
+
+
+}
+
+// Mobile 
+
+@media screen and(max-width:767px) {
+
+    .sectionThree {
+        width: 100%;
+
+        .up {
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 38px;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+
+            }
+
+            .counterText {
+                font-weight: 400;
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            button {
+                margin-bottom: 40px;
+            }
+
+
+        }
+
+        .down {
+            button {
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
